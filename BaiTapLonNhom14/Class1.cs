@@ -24,6 +24,7 @@ namespace BaiTapLonNhom14
                 dataAdapter.Fill(dataTable);
                 connection.Close();
                 return dataTable;
+                datagrid
             }
             else
             {
