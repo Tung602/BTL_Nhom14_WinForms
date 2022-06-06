@@ -1,0 +1,9 @@
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\bin\Debug\BaiTapLonNhom14.exe.config
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\bin\Debug\BaiTapLonNhom14.exe
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\bin\Debug\BaiTapLonNhom14.pdb
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QLSV.resources
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.Properties.Resources.resources
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csproj.GenerateResource.Cache
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.exe
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.pdb
