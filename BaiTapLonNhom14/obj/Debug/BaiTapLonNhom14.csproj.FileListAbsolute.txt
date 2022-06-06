@@ -7,3 +7,14 @@
 \\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csproj.GenerateResource.Cache
 \\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.exe
 \\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.pdb
+C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\BaiTapLonNhom14.exe.config
+C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\BaiTapLonNhom14.exe
+C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\BaiTapLonNhom14.pdb
+C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QLSV.resources
+C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.Properties.Resources.resources
+C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.exe
+C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.pdb
