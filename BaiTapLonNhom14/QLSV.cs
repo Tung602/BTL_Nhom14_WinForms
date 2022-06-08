@@ -50,17 +50,7 @@ namespace BaiTapLonNhom14
 
         // ErrorProvider để hiển thị lỗi khi input
         ErrorProvider ErroProvider1 = new ErrorProvider();
-
-        //Hàm hiển thị số sinh viên tìm kiếm được
-        private bool isContains(ComboBox comboBox)
-        {
-            foreach(DataRowView row in comboBox.Items){
-                if(row[0].ToString() == comboBox.Text){
-                    return true;
-                }
-            }
-            return false;
-        }
+       
         // Hàm xóa ErrorProvider cho các input
         private void removeErrorProvider()
         {
@@ -82,7 +72,6 @@ namespace BaiTapLonNhom14
 
         private void AddEventHander1()
         {
-            this.textBox_MaSV.TextChanged += new System.EventHandler(this.textBox_MaSV_TextChanged1);
             this.textBox_HoTen.TextChanged += new System.EventHandler(this.textBox_HoTen_TextChanged1);
             this.dateTimePicker_NgaySinh.ValueChanged += new System.EventHandler(this.dateTimePicker_NgaySinh_ValueChanged1);
             this.checkBox_Nam.CheckedChanged += new System.EventHandler(this.checkBox_Nam_CheckedChanged2);
@@ -101,7 +90,6 @@ namespace BaiTapLonNhom14
 
         private void RemoveEventHander1()
         {
-            this.textBox_MaSV.TextChanged -= this.textBox_MaSV_TextChanged1;
             this.textBox_HoTen.TextChanged -= this.textBox_HoTen_TextChanged1;
             this.dateTimePicker_NgaySinh.ValueChanged -= this.dateTimePicker_NgaySinh_ValueChanged1;
             this.checkBox_Nam.CheckedChanged -= this.checkBox_Nam_CheckedChanged2;
@@ -119,11 +107,10 @@ namespace BaiTapLonNhom14
 
         private bool isAllValid1()
         {
-            isIdValid1();
             isNameValid();
             isDateValid();
             isGenderValid();
-            return isIdValid1() && isNameValid() && isDateValid() && isGenderValid() ? true : false;
+            return isNameValid() && isDateValid() && isGenderValid() ? true : false;
         }
 
         // Hàm kiểm tra ID hợp lệ
@@ -148,30 +135,6 @@ namespace BaiTapLonNhom14
             }
         }
 
-        private bool isIdValid1()
-        {
-            DataTable table = DataAccess.SqlExecute("SELECT maSV FROM SV WHERE maSV = '" + textBox_MaSV.Text.Trim() + "';");
-            if (textBox_MaSV.Text.Trim() == selectedRow[0].Cells[0].Value.ToString())
-            {
-                ErroProvider1.SetError(this.textBox_MaSV, String.Empty);
-                return true;
-            }
-            else if (table.Rows.Count != 0)
-            {
-                ErroProvider1.SetError(this.textBox_MaSV, "Mã sinh viên đã tồn tại.");
-                return false;
-            }
-            else if (textBox_MaSV.Text.Trim() == "")
-            {
-                ErroProvider1.SetError(this.textBox_MaSV, "Nhập mã sinh viên.");
-                return false;
-            }
-            else
-            {
-                ErroProvider1.SetError(this.textBox_MaSV, String.Empty);
-                return true;
-            }
-        }
         // Hàm kiểm tra tên hợp lệ
         private bool isNameValid()
         {
@@ -245,6 +208,18 @@ namespace BaiTapLonNhom14
             comboBox_Lop.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
+        private bool isContains(ComboBox comboBox)
+        {
+            foreach (DataRowView row in comboBox.Items)
+            {
+                if (row[0].ToString() == comboBox.Text)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         // Hàm kiểm tra Khoa nhập vào có tồn tại trong CSDL
         private bool isContainsKhoa(ComboBox comboBox)
         {
@@ -294,7 +269,7 @@ namespace BaiTapLonNhom14
         private void QLSV_Load(object sender, EventArgs e)
         {
             dateTimePicker_NgaySinh.CustomFormat = "dd-MM-yyyy";
-            SetDataComboBox(comboBox_Khoa, "SELECT * FROM KHOA", "tenKhoa", "tenKhoa");          
+            SetDataComboBox(comboBox_Khoa, "SELECT * FROM KHOA", "tenKhoa", "tenKhoa");
         }
 
         // Hàm cho sự kiện chọn Khoa và đổ dữ liệu vào Lớp theo Khoa
@@ -318,14 +293,14 @@ namespace BaiTapLonNhom14
                 currentDataQuery = sqlSelect;
                 showResult(data);
                 resetCellColor();
-                dataGridView_SV.Columns["Mã SV"].DefaultCellStyle.ForeColor = Color.Red;
+                setCellColor("Mã SV");
             }
             else
             {
                 List<string> filter = new List<string>();
-                resetCellColor();
                 DataTable data = DataAccess.SqlExecute(SqlSelectSV);
                 dataGridView_SV.DataSource = data;
+                resetCellColor();
                 if (textBox_HoTen.Text != "")
                 {
                     filter.Add("SV.tenSV = N'" + textBox_HoTen.Text.Trim() + "'");
@@ -399,6 +374,7 @@ namespace BaiTapLonNhom14
                 selectedRow = dataGridView_SV.SelectedRows;
                 dataGridView_SV.RowHeaderMouseClick -= dataGridView_SV_RowHeaderMouseClick;
                 buttonDisable();
+                textBox_MaSV.Enabled = false;
                 AddEventHander1();
             }
         }
@@ -440,7 +416,7 @@ namespace BaiTapLonNhom14
             {
                 if (isAllValid1())
                 {
-                    bool isSuccess = DataAccess.InsertIntoSV(textBox_MaSV, textBox_HoTen, dateTimePicker_NgaySinh, gioiTinh, comboBox_QueQuan, comboBox_Lop);
+                    bool isSuccess = DataAccess.UpdateSV(textBox_MaSV, textBox_HoTen, dateTimePicker_NgaySinh, gioiTinh, comboBox_QueQuan, comboBox_Lop);
                     if (isSuccess)
                     {
                         MessageBox.Show("Updated");
@@ -450,6 +426,7 @@ namespace BaiTapLonNhom14
                         DataTable data = DataAccess.SqlExecute(currentDataQuery);
                         dataGridView_SV.DataSource = data;
                         dataGridView_SV.Refresh();
+                        textBox_MaSV.Enabled = true;
                     }
                     else
                     {
@@ -458,6 +435,7 @@ namespace BaiTapLonNhom14
                         RemoveEventHander1();
                         removeErrorProvider();
                         dataGridView_SV.Refresh();
+                        textBox_MaSV.Enabled = true;
                     }
                 }
                 // Thêm sự kiện rowHeaderClick
@@ -495,78 +473,24 @@ namespace BaiTapLonNhom14
         // Các hàm cho sự kiện value change để kiểm tra dữ liệu khi input
         private void textBox_MaSV_TextChanged(object sender, EventArgs e)
         {
-            if (isAllValid())
-            {
-                button_Save.Enabled = true;
-            }
-            else
-            {
-                button_Save.Enabled = false;
-            }
+            button_Save.Enabled = isAllValid() ? true : false;
         }
-
-        // Onchange mã sinh viên khi sửa
-
-        private void textBox_MaSV_TextChanged1(object sender, EventArgs e)
-        {
-            if (isAllValid1())
-            {
-                button_Save.Enabled = true;
-            }
-            else
-            {
-                button_Save.Enabled = false;
-            }
-        }
-
         private void textBox_HoTen_TextChanged(object sender, EventArgs e)
         {
-            if (isAllValid())
-            {
-                button_Save.Enabled = true;
-            }
-            else
-            {
-                button_Save.Enabled = false;
-            }
+            button_Save.Enabled = isAllValid() ? true : false;
         }
-
         private void textBox_HoTen_TextChanged1(object sender, EventArgs e)
         {
-            if (isAllValid1())
-            {
-                button_Save.Enabled = true;
-            }
-            else
-            {
-                button_Save.Enabled = false;
-            }
+            button_Save.Enabled = isAllValid1() ? true : false;
         }
-
         private void dateTimePicker_NgaySinh_ValueChanged(object sender, EventArgs e)
         {
-            if (isAllValid())
-            {
-                button_Save.Enabled = true;
-            }
-            else
-            {
-                button_Save.Enabled = false;
-            }
+            button_Save.Enabled = isAllValid() ? true : false;
         }
-
         private void dateTimePicker_NgaySinh_ValueChanged1(object sender, EventArgs e)
         {
-            if (isAllValid1())
-            {
-                button_Save.Enabled = true;
-            }
-            else
-            {
-                button_Save.Enabled = false;
-            }
+            button_Save.Enabled = isAllValid1() ? true : false;
         }
-
         private void checkBox_Nam_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_Nam.Checked)
@@ -594,75 +518,48 @@ namespace BaiTapLonNhom14
         }
         private void checkBox_Nam_CheckedChanged1(object sender, EventArgs e)
         {
-            if (isAllValid())
-            {
-                button_Save.Enabled = true;
-            }
-            else
-            {
-                button_Save.Enabled = false;
-            }
+            button_Save.Enabled = isAllValid() ? true : false;
         }
         private void checkBox_Nam_CheckedChanged2(object sender, EventArgs e)
         {
-            if (isAllValid1())
-            {
-                button_Save.Enabled = true;
-            }
-            else
-            {
-                button_Save.Enabled = false;
-            }
+            button_Save.Enabled = isAllValid1() ? true : false;
         }
         private void checkBox_Nu_CheckedChanged1(object sender, EventArgs e)
         {
-            if (isAllValid())
-            {
-                button_Save.Enabled = true;
-            }
-            else
-            {
-                button_Save.Enabled = false;
-            }
+            button_Save.Enabled = isAllValid() ? true : false;
         }
         private void checkBox_Nu_CheckedChanged2(object sender, EventArgs e)
         {
-            if (isAllValid1())
-            {
-                button_Save.Enabled = true;
-            }
-            else
-            {
-                button_Save.Enabled = false;
-            }
+            button_Save.Enabled = isAllValid1() ? true : false;
         }
 
         // Sửa thông tin sinh viên
 
         private void loadDataToInput()
         {
-            DataGridViewSelectedRowCollection rows = dataGridView_SV.SelectedRows;
-            textBox_MaSV.Text = rows[0].Cells[0].Value.ToString();
-            textBox_HoTen.Text = rows[0].Cells[1].Value.ToString();
-            dateTimePicker_NgaySinh.Value = Convert.ToDateTime(rows[0].Cells[2].Value.ToString()); ;
-            if (rows[0].Cells[3].Value.ToString() == "Nam")
+            if (selectedRow != null)
             {
-                checkBox_Nam.Checked = true;
+                DataGridViewSelectedRowCollection rows = dataGridView_SV.SelectedRows;
+                textBox_MaSV.Text = rows[0].Cells[0].Value.ToString();
+                textBox_HoTen.Text = rows[0].Cells[1].Value.ToString();
+                dateTimePicker_NgaySinh.Value = Convert.ToDateTime(rows[0].Cells[2].Value.ToString()); ;
+                if (rows[0].Cells[3].Value.ToString() == "Nam")
+                {
+                    checkBox_Nam.Checked = true;
+                }
+                else
+                {
+                    checkBox_Nu.Checked = true;
+                }
+                comboBox_QueQuan.Text = rows[0].Cells[4].Value.ToString();
+                comboBox_Khoa.Text = rows[0].Cells[6].Value.ToString();
+                comboBox_Lop.Text = rows[0].Cells[5].Value.ToString();
             }
-            else
-            {
-                checkBox_Nu.Checked = true;
-            }
-            comboBox_QueQuan.Text = rows[0].Cells[4].Value.ToString();
-            comboBox_Khoa.Text = rows[0].Cells[6].Value.ToString();
-            comboBox_Lop.Text = rows[0].Cells[5].Value.ToString();
         }
         // Hàm cho sự kiện click vào sinh viên trong dataGridView truyền dữ liệu lên input
         private void dataGridView_SV_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             loadDataToInput();
         }
-
-
     }
 }

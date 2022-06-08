@@ -24,7 +24,6 @@ namespace BaiTapLonNhom14
                 dataAdapter.Fill(dataTable);
                 connection.Close();
                 return dataTable;
-                datagrid
             }
             else
             {
@@ -43,6 +42,18 @@ namespace BaiTapLonNhom14
                 return true;
             }
             catch(Exception){
+                return false;
+            }
+        }
+        static public bool UpdateSV(TextBox maSV, TextBox hoTen, DateTimePicker ngaySinh, string gioiTinh, ComboBox queQuan, ComboBox Lop)
+        {
+            try
+            {
+                DataAccess.SqlExecute("UPDATE SV SET tenSV = N'" + hoTen.Text + "', gioiTinh = N'" + gioiTinh + "', ngaySinh = '" + ngaySinh.Value.Date.ToString() + "', queQuan = N'" + queQuan.Text + "', tenLop = '" + Lop.Text + "' WHERE maSV = '" + maSV.Text + "';");
+                return true;
+            }
+            catch (Exception)
+            {
                 return false;
             }
         }

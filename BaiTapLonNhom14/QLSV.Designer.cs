@@ -57,11 +57,12 @@
             this.button_Save = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button_Exit = new System.Windows.Forms.Button();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SV)).BeginInit();
             this.panel_Gender.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -86,6 +87,7 @@
             this.tableLayoutPanel1.Controls.Add(this.comboBox_Khoa, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.comboBox_Lop, 4, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 3, 0);
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(61, 54);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -149,34 +151,38 @@
             // 
             this.textBox_MaSV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_MaSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_MaSV.Location = new System.Drawing.Point(153, 3);
             this.textBox_MaSV.Name = "textBox_MaSV";
-            this.textBox_MaSV.Size = new System.Drawing.Size(332, 31);
+            this.textBox_MaSV.Size = new System.Drawing.Size(332, 67);
             this.textBox_MaSV.TabIndex = 0;
             // 
             // textBox_HoTen
             // 
             this.textBox_HoTen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_HoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_HoTen.Location = new System.Drawing.Point(153, 77);
             this.textBox_HoTen.Name = "textBox_HoTen";
-            this.textBox_HoTen.Size = new System.Drawing.Size(332, 31);
-            this.textBox_HoTen.TabIndex = 0;
+            this.textBox_HoTen.Size = new System.Drawing.Size(332, 67);
+            this.textBox_HoTen.TabIndex = 1;
             // 
             // dateTimePicker_NgaySinh
             // 
             this.dateTimePicker_NgaySinh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePicker_NgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker_NgaySinh.Location = new System.Drawing.Point(153, 151);
             this.dateTimePicker_NgaySinh.Name = "dateTimePicker_NgaySinh";
-            this.dateTimePicker_NgaySinh.Size = new System.Drawing.Size(332, 31);
+            this.dateTimePicker_NgaySinh.Size = new System.Drawing.Size(332, 67);
             this.dateTimePicker_NgaySinh.TabIndex = 2;
             // 
             // comboBox_QueQuan
             // 
             this.comboBox_QueQuan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_QueQuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_QueQuan.FormattingEnabled = true;
             this.comboBox_QueQuan.Items.AddRange(new object[] {
             "An Giang",
@@ -244,29 +250,31 @@
             "Yên Bái"});
             this.comboBox_QueQuan.Location = new System.Drawing.Point(721, 3);
             this.comboBox_QueQuan.Name = "comboBox_QueQuan";
-            this.comboBox_QueQuan.Size = new System.Drawing.Size(333, 33);
-            this.comboBox_QueQuan.TabIndex = 3;
+            this.comboBox_QueQuan.Size = new System.Drawing.Size(333, 69);
+            this.comboBox_QueQuan.TabIndex = 5;
             // 
             // comboBox_Khoa
             // 
             this.comboBox_Khoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_Khoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Khoa.FormattingEnabled = true;
             this.comboBox_Khoa.Location = new System.Drawing.Point(721, 77);
             this.comboBox_Khoa.Name = "comboBox_Khoa";
-            this.comboBox_Khoa.Size = new System.Drawing.Size(333, 33);
-            this.comboBox_Khoa.TabIndex = 3;
+            this.comboBox_Khoa.Size = new System.Drawing.Size(333, 69);
+            this.comboBox_Khoa.TabIndex = 6;
             this.comboBox_Khoa.SelectedIndexChanged += new System.EventHandler(this.comboBox_Khoa_SelectedIndexChanged);
             // 
             // comboBox_Lop
             // 
             this.comboBox_Lop.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_Lop.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Lop.FormattingEnabled = true;
             this.comboBox_Lop.Location = new System.Drawing.Point(721, 151);
             this.comboBox_Lop.Name = "comboBox_Lop";
-            this.comboBox_Lop.Size = new System.Drawing.Size(333, 33);
-            this.comboBox_Lop.TabIndex = 3;
+            this.comboBox_Lop.Size = new System.Drawing.Size(333, 69);
+            this.comboBox_Lop.TabIndex = 7;
             // 
             // label4
             // 
@@ -296,7 +304,7 @@
             this.buttonDelete.Location = new System.Drawing.Point(52, 192);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(135, 49);
-            this.buttonDelete.TabIndex = 0;
+            this.buttonDelete.TabIndex = 11;
             this.buttonDelete.Text = "Xóa";
             this.buttonDelete.UseVisualStyleBackColor = true;
             // 
@@ -306,7 +314,7 @@
             this.buttonEdit.Location = new System.Drawing.Point(52, 135);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(135, 49);
-            this.buttonEdit.TabIndex = 0;
+            this.buttonEdit.TabIndex = 10;
             this.buttonEdit.Text = "Sửa";
             this.buttonEdit.UseVisualStyleBackColor = true;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
@@ -317,7 +325,7 @@
             this.buttonAdd.Location = new System.Drawing.Point(52, 78);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(135, 49);
-            this.buttonAdd.TabIndex = 0;
+            this.buttonAdd.TabIndex = 9;
             this.buttonAdd.Text = "Thêm";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -328,7 +336,7 @@
             this.buttonShow.Location = new System.Drawing.Point(52, 21);
             this.buttonShow.Name = "buttonShow";
             this.buttonShow.Size = new System.Drawing.Size(135, 49);
-            this.buttonShow.TabIndex = 0;
+            this.buttonShow.TabIndex = 8;
             this.buttonShow.Text = "Hiển thị";
             this.buttonShow.UseVisualStyleBackColor = true;
             this.buttonShow.Click += new System.EventHandler(this.buttonShow_Click);
@@ -349,6 +357,7 @@
             // 
             // label_Gender
             // 
+            this.label_Gender.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_Gender.AutoSize = true;
             this.label_Gender.Location = new System.Drawing.Point(486, 295);
             this.label_Gender.Name = "label_Gender";
@@ -372,7 +381,7 @@
             this.checkBox_Nu.Location = new System.Drawing.Point(105, 12);
             this.checkBox_Nu.Name = "checkBox_Nu";
             this.checkBox_Nu.Size = new System.Drawing.Size(71, 29);
-            this.checkBox_Nu.TabIndex = 5;
+            this.checkBox_Nu.TabIndex = 4;
             this.checkBox_Nu.Text = "Nữ";
             this.checkBox_Nu.UseVisualStyleBackColor = true;
             this.checkBox_Nu.CheckedChanged += new System.EventHandler(this.checkBox_Nu_CheckedChanged);
@@ -383,7 +392,7 @@
             this.checkBox_Nam.Location = new System.Drawing.Point(11, 12);
             this.checkBox_Nam.Name = "checkBox_Nam";
             this.checkBox_Nam.Size = new System.Drawing.Size(88, 29);
-            this.checkBox_Nam.TabIndex = 4;
+            this.checkBox_Nam.TabIndex = 3;
             this.checkBox_Nam.Text = "Nam";
             this.checkBox_Nam.UseVisualStyleBackColor = true;
             this.checkBox_Nam.CheckedChanged += new System.EventHandler(this.checkBox_Nam_CheckedChanged);
@@ -396,7 +405,7 @@
             this.button_Cancel.Location = new System.Drawing.Point(1227, 868);
             this.button_Cancel.Name = "button_Cancel";
             this.button_Cancel.Size = new System.Drawing.Size(135, 49);
-            this.button_Cancel.TabIndex = 0;
+            this.button_Cancel.TabIndex = 13;
             this.button_Cancel.Text = "Hủy";
             this.button_Cancel.UseVisualStyleBackColor = true;
             this.button_Cancel.Click += new System.EventHandler(this.button_Cancel_Click);
@@ -409,7 +418,7 @@
             this.button_Save.Location = new System.Drawing.Point(1086, 868);
             this.button_Save.Name = "button_Save";
             this.button_Save.Size = new System.Drawing.Size(135, 49);
-            this.button_Save.TabIndex = 0;
+            this.button_Save.TabIndex = 12;
             this.button_Save.Text = "Lưu";
             this.button_Save.UseVisualStyleBackColor = true;
             this.button_Save.Click += new System.EventHandler(this.button_Save_Click);
@@ -420,34 +429,34 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "icon-exit.jpeg");
             // 
-            // button_Exit
+            // iconPictureBox1
             // 
-            this.button_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Exit.ImageIndex = 0;
-            this.button_Exit.ImageList = this.imageList1;
-            this.button_Exit.Location = new System.Drawing.Point(12, 868);
-            this.button_Exit.Name = "button_Exit";
-            this.button_Exit.Size = new System.Drawing.Size(227, 49);
-            this.button_Exit.TabIndex = 0;
-            this.button_Exit.Text = "Trở về trang chủ";
-            this.button_Exit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button_Exit.UseVisualStyleBackColor = true;
+            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.Location = new System.Drawing.Point(957, 314);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(198, 32);
+            this.iconPictureBox1.TabIndex = 14;
+            this.iconPictureBox1.TabStop = false;
             // 
             // QLSV
             // 
+            this.AcceptButton = this.button_Save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1374, 929);
+            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.button_Cancel);
-            this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.label_Gender);
             this.Controls.Add(this.button_Save);
             this.Controls.Add(this.panel_Gender);
             this.Controls.Add(this.dataGridView_SV);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinimumSize = new System.Drawing.Size(1400, 1000);
             this.Name = "QLSV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -459,6 +468,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SV)).EndInit();
             this.panel_Gender.ResumeLayout(false);
             this.panel_Gender.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,9 +501,9 @@
         private System.Windows.Forms.Button button_Save;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button button_Exit;
         private System.Windows.Forms.CheckBox checkBox_Nu;
         private System.Windows.Forms.CheckBox checkBox_Nam;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }
 
