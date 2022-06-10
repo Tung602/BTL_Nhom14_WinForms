@@ -1,6 +1,6 @@
 ﻿namespace BaiTapLonNhom14
 {
-    partial class TrangChu
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButtonQLK = new FontAwesome.Sharp.IconButton();
@@ -37,7 +37,6 @@
             this.iconButtonQLMH = new FontAwesome.Sharp.IconButton();
             this.iconButtonQLD = new FontAwesome.Sharp.IconButton();
             this.iconButtonQLSV = new FontAwesome.Sharp.IconButton();
-            this.iconButtonTrangChu = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelBar = new System.Windows.Forms.Panel();
@@ -47,6 +46,8 @@
             this.iconPictureBoxBarIcon = new FontAwesome.Sharp.IconPictureBox();
             this.labelBarTitle = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -54,6 +55,8 @@
             this.panelBar.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBoxBarIcon)).BeginInit();
+            this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -64,7 +67,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(346, 1009);
+            this.panelMenu.Size = new System.Drawing.Size(340, 1529);
             this.panelMenu.TabIndex = 0;
             // 
             // panel1
@@ -74,11 +77,10 @@
             this.panel1.Controls.Add(this.iconButtonQLMH);
             this.panel1.Controls.Add(this.iconButtonQLD);
             this.panel1.Controls.Add(this.iconButtonQLSV);
-            this.panel1.Controls.Add(this.iconButtonTrangChu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 178);
+            this.panel1.Location = new System.Drawing.Point(0, 214);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(346, 684);
+            this.panel1.Size = new System.Drawing.Size(340, 684);
             this.panel1.TabIndex = 1;
             // 
             // iconButtonQLK
@@ -93,16 +95,16 @@
             this.iconButtonQLK.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonQLK.IconSize = 60;
             this.iconButtonQLK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonQLK.Location = new System.Drawing.Point(0, 545);
+            this.iconButtonQLK.Location = new System.Drawing.Point(0, 436);
             this.iconButtonQLK.Name = "iconButtonQLK";
             this.iconButtonQLK.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButtonQLK.Size = new System.Drawing.Size(346, 109);
+            this.iconButtonQLK.Size = new System.Drawing.Size(340, 109);
             this.iconButtonQLK.TabIndex = 5;
             this.iconButtonQLK.Text = "Quản lý khoa";
             this.iconButtonQLK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonQLK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButtonQLK.UseVisualStyleBackColor = true;
-            this.iconButtonQLK.Click += new System.EventHandler(this.iconButtonTrangChu_Click);
+            this.iconButtonQLK.Click += new System.EventHandler(this.iconButtonQLK_Click);
             // 
             // iconButtonQLL
             // 
@@ -116,16 +118,16 @@
             this.iconButtonQLL.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonQLL.IconSize = 60;
             this.iconButtonQLL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonQLL.Location = new System.Drawing.Point(0, 436);
+            this.iconButtonQLL.Location = new System.Drawing.Point(0, 327);
             this.iconButtonQLL.Name = "iconButtonQLL";
             this.iconButtonQLL.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButtonQLL.Size = new System.Drawing.Size(346, 109);
+            this.iconButtonQLL.Size = new System.Drawing.Size(340, 109);
             this.iconButtonQLL.TabIndex = 4;
             this.iconButtonQLL.Text = "Quản lý lớp";
             this.iconButtonQLL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonQLL.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButtonQLL.UseVisualStyleBackColor = true;
-            this.iconButtonQLL.Click += new System.EventHandler(this.iconButtonTrangChu_Click);
+            this.iconButtonQLL.Click += new System.EventHandler(this.iconButtonQLL_Click);
             // 
             // iconButtonQLMH
             // 
@@ -139,16 +141,16 @@
             this.iconButtonQLMH.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonQLMH.IconSize = 60;
             this.iconButtonQLMH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonQLMH.Location = new System.Drawing.Point(0, 327);
+            this.iconButtonQLMH.Location = new System.Drawing.Point(0, 218);
             this.iconButtonQLMH.Name = "iconButtonQLMH";
             this.iconButtonQLMH.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButtonQLMH.Size = new System.Drawing.Size(346, 109);
+            this.iconButtonQLMH.Size = new System.Drawing.Size(340, 109);
             this.iconButtonQLMH.TabIndex = 3;
             this.iconButtonQLMH.Text = "Quản lý môn học";
             this.iconButtonQLMH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonQLMH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButtonQLMH.UseVisualStyleBackColor = true;
-            this.iconButtonQLMH.Click += new System.EventHandler(this.iconButtonTrangChu_Click);
+            this.iconButtonQLMH.Click += new System.EventHandler(this.iconButtonQLMH_Click);
             // 
             // iconButtonQLD
             // 
@@ -162,16 +164,16 @@
             this.iconButtonQLD.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonQLD.IconSize = 60;
             this.iconButtonQLD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonQLD.Location = new System.Drawing.Point(0, 218);
+            this.iconButtonQLD.Location = new System.Drawing.Point(0, 109);
             this.iconButtonQLD.Name = "iconButtonQLD";
             this.iconButtonQLD.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButtonQLD.Size = new System.Drawing.Size(346, 109);
+            this.iconButtonQLD.Size = new System.Drawing.Size(340, 109);
             this.iconButtonQLD.TabIndex = 2;
             this.iconButtonQLD.Text = "Quản lý điểm";
             this.iconButtonQLD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonQLD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButtonQLD.UseVisualStyleBackColor = true;
-            this.iconButtonQLD.Click += new System.EventHandler(this.iconButtonTrangChu_Click);
+            this.iconButtonQLD.Click += new System.EventHandler(this.iconButtonQLD_Click);
             // 
             // iconButtonQLSV
             // 
@@ -185,39 +187,16 @@
             this.iconButtonQLSV.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonQLSV.IconSize = 60;
             this.iconButtonQLSV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonQLSV.Location = new System.Drawing.Point(0, 109);
+            this.iconButtonQLSV.Location = new System.Drawing.Point(0, 0);
             this.iconButtonQLSV.Name = "iconButtonQLSV";
             this.iconButtonQLSV.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButtonQLSV.Size = new System.Drawing.Size(346, 109);
+            this.iconButtonQLSV.Size = new System.Drawing.Size(340, 109);
             this.iconButtonQLSV.TabIndex = 1;
             this.iconButtonQLSV.Text = "Quản lý sinh viên";
             this.iconButtonQLSV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonQLSV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButtonQLSV.UseVisualStyleBackColor = true;
             this.iconButtonQLSV.Click += new System.EventHandler(this.iconButtonQLSV_Click);
-            // 
-            // iconButtonTrangChu
-            // 
-            this.iconButtonTrangChu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButtonTrangChu.FlatAppearance.BorderSize = 0;
-            this.iconButtonTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonTrangChu.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonTrangChu.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconButtonTrangChu.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonTrangChu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonTrangChu.IconSize = 60;
-            this.iconButtonTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonTrangChu.Location = new System.Drawing.Point(0, 0);
-            this.iconButtonTrangChu.Name = "iconButtonTrangChu";
-            this.iconButtonTrangChu.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButtonTrangChu.Size = new System.Drawing.Size(346, 109);
-            this.iconButtonTrangChu.TabIndex = 0;
-            this.iconButtonTrangChu.Text = " Trang chủ";
-            this.iconButtonTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonTrangChu.UseVisualStyleBackColor = true;
-            this.iconButtonTrangChu.Click += new System.EventHandler(this.iconButtonTrangChu_Click);
             // 
             // panelLogo
             // 
@@ -226,20 +205,19 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(346, 178);
+            this.panelLogo.Size = new System.Drawing.Size(340, 214);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(66, 11);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(65, 11);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(211, 156);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
-            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panelBar
             // 
@@ -247,9 +225,9 @@
             this.panelBar.Controls.Add(this.button1);
             this.panelBar.Controls.Add(this.panel3);
             this.panelBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBar.Location = new System.Drawing.Point(346, 0);
+            this.panelBar.Location = new System.Drawing.Point(340, 0);
             this.panelBar.Name = "panelBar";
-            this.panelBar.Size = new System.Drawing.Size(1528, 100);
+            this.panelBar.Size = new System.Drawing.Size(2194, 100);
             this.panelBar.TabIndex = 1;
             // 
             // button1
@@ -265,12 +243,13 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.ImageIndex = 0;
             this.button1.ImageList = this.imageList1;
-            this.button1.Location = new System.Drawing.Point(1294, 22);
+            this.button1.Location = new System.Drawing.Point(1960, 22);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(234, 52);
             this.button1.TabIndex = 3;
             this.button1.Text = "Đăng xuất";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // imageList1
             // 
@@ -316,25 +295,54 @@
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.label1);
+            this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(346, 100);
+            this.panelDesktop.Location = new System.Drawing.Point(340, 100);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1528, 909);
+            this.panelDesktop.Size = new System.Drawing.Size(2194, 1429);
             this.panelDesktop.TabIndex = 2;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
-            // TrangChu
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label1.Location = new System.Drawing.Point(855, 968);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(485, 73);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Đại học thủy lợi";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(654, 344);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(887, 583);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1874, 1009);
+            this.ClientSize = new System.Drawing.Size(2534, 1529);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelBar);
             this.Controls.Add(this.panelMenu);
             this.MinimumSize = new System.Drawing.Size(1900, 1080);
-            this.Name = "TrangChu";
+            this.Name = "Main";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.TrangChu_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
+            this.Load += new System.EventHandler(this.Main_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
@@ -343,6 +351,9 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBoxBarIcon)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -353,7 +364,6 @@
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconButton iconButtonTrangChu;
         private System.Windows.Forms.Panel panelBar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBoxBarIcon;
         private System.Windows.Forms.Panel panel3;
@@ -366,5 +376,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel panelDesktop;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

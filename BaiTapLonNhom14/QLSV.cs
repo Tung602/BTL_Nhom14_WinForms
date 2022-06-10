@@ -270,6 +270,7 @@ namespace BaiTapLonNhom14
         {
             dateTimePicker_NgaySinh.CustomFormat = "dd-MM-yyyy";
             SetDataComboBox(comboBox_Khoa, "SELECT * FROM KHOA", "tenKhoa", "tenKhoa");
+            selectedRow = dataGridView_SV.SelectedRows;
         }
 
         // Hàm cho sự kiện chọn Khoa và đổ dữ liệu vào Lớp theo Khoa
@@ -461,6 +462,7 @@ namespace BaiTapLonNhom14
                 DialogResult result = MessageBox.Show("Bạn có muốn hủy thao tác này?", "", MessageBoxButtons.YesNoCancel);
                 if (DialogResult.Yes == result)
                 {
+                    textBox_MaSV.Enabled = true;
                     buttonEnable();
                     RemoveEventHander();
                     removeErrorProvider();
@@ -537,12 +539,12 @@ namespace BaiTapLonNhom14
 
         private void loadDataToInput()
         {
-            if (selectedRow != null)
+            if (!String.IsNullOrEmpty(dataGridView_SV[0, dataGridView_SV.CurrentRow.Index].Value.ToString()))
             {
                 DataGridViewSelectedRowCollection rows = dataGridView_SV.SelectedRows;
                 textBox_MaSV.Text = rows[0].Cells[0].Value.ToString();
                 textBox_HoTen.Text = rows[0].Cells[1].Value.ToString();
-                dateTimePicker_NgaySinh.Value = Convert.ToDateTime(rows[0].Cells[2].Value.ToString()); ;
+                dateTimePicker_NgaySinh.Value = Convert.ToDateTime(rows[0].Cells[2].Value.ToString());
                 if (rows[0].Cells[3].Value.ToString() == "Nam")
                 {
                     checkBox_Nam.Checked = true;
@@ -560,6 +562,34 @@ namespace BaiTapLonNhom14
         private void dataGridView_SV_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             loadDataToInput();
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (dataGridView_SV.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Chọn sinh viên để xóa!");
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show("Bạn có muốn sinh viên này không ?", "Xác nhận xóa", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        DataAccess.SqlExecute("DELETE FROM SV where maSV = '" + textBox_MaSV.Text + "';");
+
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Xóa không thành công.");
+                        return;
+                    }
+                    MessageBox.Show("Xóa thành công.");
+                    DataTable data = DataAccess.SqlExecute(currentDataQuery);
+                    dataGridView_SV.DataSource = data;                  
+                }
+            }
         }
     }
 }

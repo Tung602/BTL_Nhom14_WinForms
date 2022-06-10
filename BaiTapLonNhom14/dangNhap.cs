@@ -12,8 +12,10 @@ namespace BaiTapLonNhom14
 {
     public partial class dangNhap : Form
     {
-        public dangNhap()
+        Main main1;
+        public dangNhap(Main main)
         {
+            main1 = main;
             InitializeComponent();
         }
 
@@ -26,10 +28,9 @@ namespace BaiTapLonNhom14
             }
             else
             {
-                QLSV QLSV = new QLSV();
                 MessageBox.Show("Đăng nhập thành công.");
                 this.Hide();
-                QLSV.Show();
+                main1.Show();
             }
         }
 
@@ -37,6 +38,11 @@ namespace BaiTapLonNhom14
         {
             textBoxPassWord.SelectionStart = 0;
             textBoxPassWord.SelectionLength = textBoxPassWord.Text.Length;
+        }
+
+        private void dangNhap_Load(object sender, EventArgs e)
+        {
+
         }
 
 

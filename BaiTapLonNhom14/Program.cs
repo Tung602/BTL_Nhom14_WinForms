@@ -16,7 +16,9 @@ namespace BaiTapLonNhom14
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QLSV());
+            Main main = new Main();
+            Application.Run(new dangNhap(main));
+            
         }
     }
 }

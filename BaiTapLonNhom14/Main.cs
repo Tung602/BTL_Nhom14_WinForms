@@ -11,16 +11,21 @@ using FontAwesome.Sharp;
 
 namespace BaiTapLonNhom14
 {
-    public partial class TrangChu : Form
+    public partial class Main : Form
     {
         private IconButton currentButton;
         private Panel BorderButton;
         private Form CurrentChildForm;
         QLSV FormQLSV;
-        public TrangChu()
+        QuanLyLop FormQuanLyLop;
+        QuanLyMonHoc FormQuanLyMonHoc;
+        QuanLyKhoa FormQuanLyKhoa;
+        QuanLyDiem FormQuanLyDiem;
+        public Main()
         {
             InitializeComponent();
             BorderButton = new Panel();
+            currentButton = new IconButton();
             BorderButton.Size = new Size(8, 109);
             panelMenu.Controls.Add(BorderButton);
         }
@@ -48,24 +53,12 @@ namespace BaiTapLonNhom14
             currentButton.IconColor = Color.MediumPurple;
             // Thêm left border cho button
             BorderButton.BackColor = Color.MediumPurple;
-            BorderButton.Location = new Point(0, currentButton.Location.Y + 178);
+            BorderButton.Location = new Point(0, currentButton.Location.Y + 214);
             BorderButton.Visible = true;
             BorderButton.BringToFront();
             // Thay đổi bar icon 
             iconPictureBoxBarIcon.IconChar = currentButton.IconChar;
             labelBarTitle.Text = currentButton.Text;
-        }
-        private void ActivateDefaultButton()
-        {
-            currentButton = iconButtonTrangChu;
-            currentButton.BackColor = Color.FromArgb(35, 36, 81);
-            currentButton.ForeColor = Color.MediumPurple;
-            currentButton.IconColor = Color.MediumPurple;
-            // Thêm left border cho button
-            BorderButton.BackColor = Color.MediumPurple;
-            BorderButton.Location = new Point(0, currentButton.Location.Y + 178);
-            BorderButton.Visible = true;
-            BorderButton.BringToFront();
         }
         private void InactivateButton()
         {
@@ -77,17 +70,7 @@ namespace BaiTapLonNhom14
 
         private void iconButtonTrangChu_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
-        }
 
-        private void TrangChu_Load(object sender, EventArgs e)
-        {
-            ActivateDefaultButton();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            ActivateButton(iconButtonTrangChu);
         }
 
         private void iconButtonQLSV_Click(object sender, EventArgs e)
@@ -98,6 +81,74 @@ namespace BaiTapLonNhom14
                 FormQLSV = new QLSV();
             }
             OpenChildForm(FormQLSV);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconButtonQLL_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            if (FormQuanLyLop == null)
+            {
+                FormQuanLyLop = new QuanLyLop();
+            }
+            OpenChildForm(FormQuanLyLop);
+        }
+
+        private void iconButtonQLMH_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            if (FormQuanLyMonHoc == null)
+            {
+                FormQuanLyMonHoc = new QuanLyMonHoc();
+            }
+            OpenChildForm(FormQuanLyMonHoc);
+        }
+
+        private void iconButtonQLK_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            if (FormQuanLyKhoa == null)
+            {
+                FormQuanLyKhoa = new QuanLyKhoa();
+            }
+            OpenChildForm(FormQuanLyKhoa);
+        }
+
+        private void iconButtonQLD_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            if (FormQuanLyDiem == null)
+            {
+                FormQuanLyDiem = new QuanLyDiem();
+            }
+            OpenChildForm(FormQuanLyDiem);
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất?", "Sign Out", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
         }
 
     }

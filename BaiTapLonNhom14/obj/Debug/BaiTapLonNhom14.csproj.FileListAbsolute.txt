@@ -27,5 +27,9 @@ C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiT
 \\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\bin\Debug\Antlr3.Runtime.pdb
 \\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\bin\Debug\Newtonsoft.Json.xml
 \\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\bin\Debug\System.Web.Optimization.xml
-\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.TrangChu.resources
 \\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\bin\Debug\FontAwesome.Sharp.dll
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.Main.resources
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QuanLyLop.resources
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QuanLyMonHoc.resources
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QuanLyKhoa.resources
+\\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QuanLyDiem.resources
