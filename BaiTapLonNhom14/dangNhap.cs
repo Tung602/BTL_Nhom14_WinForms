@@ -12,10 +12,9 @@ namespace BaiTapLonNhom14
 {
     public partial class dangNhap : Form
     {
-        Main main1;
-        public dangNhap(Main main)
+        Main main = null;
+        public dangNhap()
         {
-            main1 = main;
             InitializeComponent();
         }
 
@@ -30,7 +29,9 @@ namespace BaiTapLonNhom14
             {
                 MessageBox.Show("Đăng nhập thành công.");
                 this.Hide();
-                main1.Show();
+                main = null;
+                main = new Main(this);
+                main.Show();
             }
         }
 

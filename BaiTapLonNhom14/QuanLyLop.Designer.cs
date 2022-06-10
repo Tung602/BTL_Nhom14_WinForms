@@ -46,10 +46,10 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(457, 56);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(176, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 29);
+            this.label1.Size = new System.Drawing.Size(47, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Khoa";
             // 
@@ -57,11 +57,11 @@
             // 
             this.comboBoxKhoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBoxKhoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxKhoa.FormattingEnabled = true;
-            this.comboBoxKhoa.Location = new System.Drawing.Point(592, 53);
+            this.comboBoxKhoa.Location = new System.Drawing.Point(250, 29);
             this.comboBoxKhoa.Name = "comboBoxKhoa";
-            this.comboBoxKhoa.Size = new System.Drawing.Size(322, 69);
+            this.comboBoxKhoa.Size = new System.Drawing.Size(322, 28);
             this.comboBoxKhoa.TabIndex = 2;
             this.comboBoxKhoa.SelectedIndexChanged += new System.EventHandler(this.comboBoxKhoa_SelectedIndexChanged);
             // 
@@ -69,9 +69,9 @@
             // 
             this.buttonADD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.buttonADD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonADD.Location = new System.Drawing.Point(426, 202);
+            this.buttonADD.Location = new System.Drawing.Point(178, 120);
             this.buttonADD.Name = "buttonADD";
-            this.buttonADD.Size = new System.Drawing.Size(148, 64);
+            this.buttonADD.Size = new System.Drawing.Size(99, 40);
             this.buttonADD.TabIndex = 3;
             this.buttonADD.Text = "Thêm";
             this.buttonADD.UseVisualStyleBackColor = true;
@@ -81,9 +81,9 @@
             // 
             this.buttonEDIT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.buttonEDIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEDIT.Location = new System.Drawing.Point(615, 201);
+            this.buttonEDIT.Location = new System.Drawing.Point(325, 120);
             this.buttonEDIT.Name = "buttonEDIT";
-            this.buttonEDIT.Size = new System.Drawing.Size(148, 64);
+            this.buttonEDIT.Size = new System.Drawing.Size(99, 40);
             this.buttonEDIT.TabIndex = 3;
             this.buttonEDIT.Text = "Sửa";
             this.buttonEDIT.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@
             // 
             this.buttonDELETE.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.buttonDELETE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDELETE.Location = new System.Drawing.Point(797, 201);
+            this.buttonDELETE.Location = new System.Drawing.Point(472, 120);
             this.buttonDELETE.Name = "buttonDELETE";
-            this.buttonDELETE.Size = new System.Drawing.Size(148, 64);
+            this.buttonDELETE.Size = new System.Drawing.Size(99, 40);
             this.buttonDELETE.TabIndex = 3;
             this.buttonDELETE.Text = "Xóa";
             this.buttonDELETE.UseVisualStyleBackColor = true;
@@ -103,15 +103,17 @@
             // 
             // dataGridViewLop
             // 
+            this.dataGridViewLop.AllowUserToAddRows = false;
             this.dataGridViewLop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewLop.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewLop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLop.Location = new System.Drawing.Point(14, 294);
+            this.dataGridViewLop.Location = new System.Drawing.Point(14, 182);
             this.dataGridViewLop.Name = "dataGridViewLop";
+            this.dataGridViewLop.RowHeadersWidth = 51;
             this.dataGridViewLop.RowTemplate.Height = 33;
-            this.dataGridViewLop.Size = new System.Drawing.Size(1342, 431);
+            this.dataGridViewLop.Size = new System.Drawing.Size(720, 274);
             this.dataGridViewLop.TabIndex = 4;
             this.dataGridViewLop.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewLop_RowHeaderMouseClick);
             // 
@@ -120,9 +122,9 @@
             this.buttonSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSave.Enabled = false;
             this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSave.Location = new System.Drawing.Point(1080, 761);
+            this.buttonSave.Location = new System.Drawing.Point(528, 471);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(134, 50);
+            this.buttonSave.Size = new System.Drawing.Size(96, 35);
             this.buttonSave.TabIndex = 5;
             this.buttonSave.Text = "Lưu";
             this.buttonSave.UseVisualStyleBackColor = true;
@@ -133,9 +135,9 @@
             this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCancel.Enabled = false;
             this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancel.Location = new System.Drawing.Point(1221, 761);
+            this.buttonCancel.Location = new System.Drawing.Point(640, 471);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(134, 50);
+            this.buttonCancel.Size = new System.Drawing.Size(96, 35);
             this.buttonCancel.TabIndex = 5;
             this.buttonCancel.Text = "Hủy";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -145,19 +147,20 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(462, 128);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(181, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 29);
+            this.label2.Size = new System.Drawing.Size(37, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Lớp";
             // 
             // textBoxLop
             // 
             this.textBoxLop.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLop.Location = new System.Drawing.Point(592, 129);
+            this.textBoxLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLop.Location = new System.Drawing.Point(250, 75);
             this.textBoxLop.Name = "textBoxLop";
-            this.textBoxLop.Size = new System.Drawing.Size(322, 67);
+            this.textBoxLop.Size = new System.Drawing.Size(322, 27);
             this.textBoxLop.TabIndex = 7;
             // 
             // labelWarning
@@ -165,16 +168,16 @@
             this.labelWarning.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelWarning.AutoSize = true;
             this.labelWarning.ForeColor = System.Drawing.Color.Red;
-            this.labelWarning.Location = new System.Drawing.Point(587, 166);
+            this.labelWarning.Location = new System.Drawing.Point(237, 142);
             this.labelWarning.Name = "labelWarning";
-            this.labelWarning.Size = new System.Drawing.Size(0, 29);
+            this.labelWarning.Size = new System.Drawing.Size(0, 18);
             this.labelWarning.TabIndex = 6;
             // 
             // QuanLyLop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 825);
+            this.ClientSize = new System.Drawing.Size(748, 518);
             this.Controls.Add(this.textBoxLop);
             this.Controls.Add(this.labelWarning);
             this.Controls.Add(this.label2);

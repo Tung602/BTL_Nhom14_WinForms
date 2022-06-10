@@ -43,19 +43,20 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(297, 166);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(194, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 29);
+            this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên khoa";
             // 
             // textBoxTenKhoa
             // 
             this.textBoxTenKhoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxTenKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTenKhoa.Location = new System.Drawing.Point(433, 162);
+            this.textBoxTenKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTenKhoa.Location = new System.Drawing.Point(289, 80);
             this.textBoxTenKhoa.Name = "textBoxTenKhoa";
-            this.textBoxTenKhoa.Size = new System.Drawing.Size(394, 67);
+            this.textBoxTenKhoa.Size = new System.Drawing.Size(362, 27);
             this.textBoxTenKhoa.TabIndex = 1;
             // 
             // dataGridViewKhoa
@@ -66,19 +67,20 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewKhoa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewKhoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewKhoa.Location = new System.Drawing.Point(15, 380);
+            this.dataGridViewKhoa.Location = new System.Drawing.Point(15, 183);
             this.dataGridViewKhoa.Name = "dataGridViewKhoa";
+            this.dataGridViewKhoa.RowHeadersWidth = 51;
             this.dataGridViewKhoa.RowTemplate.Height = 33;
-            this.dataGridViewKhoa.Size = new System.Drawing.Size(1098, 486);
+            this.dataGridViewKhoa.Size = new System.Drawing.Size(818, 255);
             this.dataGridViewKhoa.TabIndex = 2;
             this.dataGridViewKhoa.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewKhoa_RowHeaderMouseClick);
             // 
             // buttonThem
             // 
             this.buttonThem.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonThem.Location = new System.Drawing.Point(301, 267);
+            this.buttonThem.Location = new System.Drawing.Point(222, 124);
             this.buttonThem.Name = "buttonThem";
-            this.buttonThem.Size = new System.Drawing.Size(146, 71);
+            this.buttonThem.Size = new System.Drawing.Size(89, 33);
             this.buttonThem.TabIndex = 3;
             this.buttonThem.Text = "Thêm ";
             this.buttonThem.UseVisualStyleBackColor = true;
@@ -87,9 +89,9 @@
             // buttonSua
             // 
             this.buttonSua.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonSua.Location = new System.Drawing.Point(489, 267);
+            this.buttonSua.Location = new System.Drawing.Point(378, 124);
             this.buttonSua.Name = "buttonSua";
-            this.buttonSua.Size = new System.Drawing.Size(146, 71);
+            this.buttonSua.Size = new System.Drawing.Size(89, 33);
             this.buttonSua.TabIndex = 3;
             this.buttonSua.Text = "Sửa";
             this.buttonSua.UseVisualStyleBackColor = true;
@@ -98,9 +100,9 @@
             // buttonXoa
             // 
             this.buttonXoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonXoa.Location = new System.Drawing.Point(677, 267);
+            this.buttonXoa.Location = new System.Drawing.Point(534, 124);
             this.buttonXoa.Name = "buttonXoa";
-            this.buttonXoa.Size = new System.Drawing.Size(146, 71);
+            this.buttonXoa.Size = new System.Drawing.Size(89, 33);
             this.buttonXoa.TabIndex = 3;
             this.buttonXoa.Text = "Xóa";
             this.buttonXoa.UseVisualStyleBackColor = true;
@@ -110,26 +112,27 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(297, 96);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(194, 39);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 29);
+            this.label2.Size = new System.Drawing.Size(72, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã khoa";
             // 
             // textBoxMaKhoa
             // 
             this.textBoxMaKhoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxMaKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMaKhoa.Location = new System.Drawing.Point(433, 93);
+            this.textBoxMaKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMaKhoa.Location = new System.Drawing.Point(289, 36);
             this.textBoxMaKhoa.Name = "textBoxMaKhoa";
-            this.textBoxMaKhoa.Size = new System.Drawing.Size(394, 67);
+            this.textBoxMaKhoa.Size = new System.Drawing.Size(362, 27);
             this.textBoxMaKhoa.TabIndex = 1;
             // 
             // QuanLyKhoa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 878);
+            this.ClientSize = new System.Drawing.Size(845, 450);
             this.Controls.Add(this.buttonXoa);
             this.Controls.Add(this.buttonSua);
             this.Controls.Add(this.buttonThem);

@@ -11,7 +11,7 @@ namespace BaiTapLonNhom14
 {
     internal class DataAccess
     {
-        static string stringConnection = "Data Source=DOTHANHTUNG\\SQL;Initial Catalog=QLSV;Integrated Security=True";
+        static string stringConnection = "Data Source=ADMIN\\SQLEXPRESS;Initial Catalog=QLSV_NHOM14;Integrated Security=True";
         static SqlConnection connection = null;
         static public DataTable SqlExecute(string sqlQuery)
         {

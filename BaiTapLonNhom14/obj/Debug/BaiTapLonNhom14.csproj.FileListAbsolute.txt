@@ -33,3 +33,30 @@ C:\Users\Admin\Desktop\Window\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiT
 \\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QuanLyMonHoc.resources
 \\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QuanLyKhoa.resources
 \\Mac\Home\Documents\Visual Studio 2013\BaiTapLonNhom14\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QuanLyDiem.resources
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\BaiTapLonNhom14.exe.config
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\BaiTapLonNhom14.exe
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\BaiTapLonNhom14.pdb
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\WebGrease.dll
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\bin\Debug\System.Web.Optimization.xml
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.dangNhap.resources
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QLSV.resources
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.Properties.Resources.resources
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.Main.resources
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QuanLyDiem.resources
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QuanLyKhoa.resources
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QuanLyLop.resources
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.QuanLyMonHoc.resources
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.csproj.CopyComplete
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.exe
+C:\Users\Admin\Desktop\BTL_Nhom14_WinForms\BaiTapLonNhom14\obj\Debug\BaiTapLonNhom14.pdb

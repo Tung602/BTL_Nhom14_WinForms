@@ -21,12 +21,14 @@ namespace BaiTapLonNhom14
         QuanLyMonHoc FormQuanLyMonHoc;
         QuanLyKhoa FormQuanLyKhoa;
         QuanLyDiem FormQuanLyDiem;
-        public Main()
+        dangNhap FormDangNhap;
+        public Main(dangNhap login)
         {
+            FormDangNhap = login;
             InitializeComponent();
             BorderButton = new Panel();
             currentButton = new IconButton();
-            BorderButton.Size = new Size(8, 109);
+            BorderButton.Size = new Size(7, iconButtonQLD.Size.Height);
             panelMenu.Controls.Add(BorderButton);
         }
         private void OpenChildForm(Form childForm)
@@ -53,7 +55,7 @@ namespace BaiTapLonNhom14
             currentButton.IconColor = Color.MediumPurple;
             // Thêm left border cho button
             BorderButton.BackColor = Color.MediumPurple;
-            BorderButton.Location = new Point(0, currentButton.Location.Y + 214);
+            BorderButton.Location = new Point(0, currentButton.Location.Y + panelLogo.Size.Height);
             BorderButton.Visible = true;
             BorderButton.BringToFront();
             // Thay đổi bar icon 
@@ -143,13 +145,29 @@ namespace BaiTapLonNhom14
             DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất?", "Sign Out", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                Application.Exit();
+                FormDangNhap.Show();
+                this.Hide();
             }
         }
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                DialogResult result = MessageBox.Show("Do you really want to exit?", "Exit?", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
-
     }
 }

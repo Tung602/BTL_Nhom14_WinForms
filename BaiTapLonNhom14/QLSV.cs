@@ -591,5 +591,10 @@ namespace BaiTapLonNhom14
                 }
             }
         }
+
+        private void label_Gender_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

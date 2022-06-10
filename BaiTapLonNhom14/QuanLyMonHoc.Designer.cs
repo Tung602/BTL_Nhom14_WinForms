@@ -45,9 +45,10 @@
             // 
             this.labelKhoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelKhoa.AutoSize = true;
-            this.labelKhoa.Location = new System.Drawing.Point(343, 42);
+            this.labelKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKhoa.Location = new System.Drawing.Point(240, 30);
             this.labelKhoa.Name = "labelKhoa";
-            this.labelKhoa.Size = new System.Drawing.Size(69, 29);
+            this.labelKhoa.Size = new System.Drawing.Size(47, 20);
             this.labelKhoa.TabIndex = 0;
             this.labelKhoa.Text = "Khoa";
             // 
@@ -55,30 +56,31 @@
             // 
             this.comboBoxKhoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBoxKhoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxKhoa.FormattingEnabled = true;
-            this.comboBoxKhoa.Location = new System.Drawing.Point(428, 42);
+            this.comboBoxKhoa.Location = new System.Drawing.Point(306, 30);
             this.comboBoxKhoa.Name = "comboBoxKhoa";
-            this.comboBoxKhoa.Size = new System.Drawing.Size(392, 69);
+            this.comboBoxKhoa.Size = new System.Drawing.Size(392, 28);
             this.comboBoxKhoa.TabIndex = 1;
             this.comboBoxKhoa.SelectedIndexChanged += new System.EventHandler(this.comboBoxKhoa_SelectedIndexChanged);
             // 
             // textBoxMaMonHoc
             // 
             this.textBoxMaMonHoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxMaMonHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMaMonHoc.Location = new System.Drawing.Point(428, 115);
+            this.textBoxMaMonHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMaMonHoc.Location = new System.Drawing.Point(306, 75);
             this.textBoxMaMonHoc.Name = "textBoxMaMonHoc";
-            this.textBoxMaMonHoc.Size = new System.Drawing.Size(392, 67);
+            this.textBoxMaMonHoc.Size = new System.Drawing.Size(392, 27);
             this.textBoxMaMonHoc.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(268, 115);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(186, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 29);
+            this.label2.Size = new System.Drawing.Size(101, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã môn học";
             // 
@@ -86,19 +88,20 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(258, 188);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(181, 122);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 29);
+            this.label3.Size = new System.Drawing.Size(106, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Tên môn học";
             // 
             // textBoxTenMonHoc
             // 
             this.textBoxTenMonHoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxTenMonHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTenMonHoc.Location = new System.Drawing.Point(428, 186);
+            this.textBoxTenMonHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTenMonHoc.Location = new System.Drawing.Point(306, 119);
             this.textBoxTenMonHoc.Name = "textBoxTenMonHoc";
-            this.textBoxTenMonHoc.Size = new System.Drawing.Size(392, 67);
+            this.textBoxTenMonHoc.Size = new System.Drawing.Size(392, 27);
             this.textBoxTenMonHoc.TabIndex = 2;
             // 
             // dataGridViewMonHoc
@@ -109,10 +112,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewMonHoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewMonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMonHoc.Location = new System.Drawing.Point(12, 368);
+            this.dataGridViewMonHoc.Location = new System.Drawing.Point(12, 238);
             this.dataGridViewMonHoc.Name = "dataGridViewMonHoc";
+            this.dataGridViewMonHoc.RowHeadersWidth = 51;
             this.dataGridViewMonHoc.RowTemplate.Height = 33;
-            this.dataGridViewMonHoc.Size = new System.Drawing.Size(1134, 542);
+            this.dataGridViewMonHoc.Size = new System.Drawing.Size(854, 288);
             this.dataGridViewMonHoc.TabIndex = 4;
             this.dataGridViewMonHoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMonHoc_CellContentClick);
             this.dataGridViewMonHoc.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewMonHoc_RowHeaderMouseClick);
@@ -120,9 +124,9 @@
             // buttonThem
             // 
             this.buttonThem.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonThem.Location = new System.Drawing.Point(389, 272);
+            this.buttonThem.Location = new System.Drawing.Point(271, 168);
             this.buttonThem.Name = "buttonThem";
-            this.buttonThem.Size = new System.Drawing.Size(119, 47);
+            this.buttonThem.Size = new System.Drawing.Size(111, 41);
             this.buttonThem.TabIndex = 5;
             this.buttonThem.Text = "Thêm";
             this.buttonThem.UseVisualStyleBackColor = true;
@@ -131,9 +135,9 @@
             // buttonSua
             // 
             this.buttonSua.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonSua.Location = new System.Drawing.Point(520, 272);
+            this.buttonSua.Location = new System.Drawing.Point(402, 168);
             this.buttonSua.Name = "buttonSua";
-            this.buttonSua.Size = new System.Drawing.Size(119, 47);
+            this.buttonSua.Size = new System.Drawing.Size(111, 41);
             this.buttonSua.TabIndex = 5;
             this.buttonSua.Text = "Sửa";
             this.buttonSua.UseVisualStyleBackColor = true;
@@ -142,9 +146,9 @@
             // buttonXoa
             // 
             this.buttonXoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonXoa.Location = new System.Drawing.Point(651, 272);
+            this.buttonXoa.Location = new System.Drawing.Point(533, 168);
             this.buttonXoa.Name = "buttonXoa";
-            this.buttonXoa.Size = new System.Drawing.Size(119, 47);
+            this.buttonXoa.Size = new System.Drawing.Size(111, 41);
             this.buttonXoa.TabIndex = 5;
             this.buttonXoa.Text = "Xóa";
             this.buttonXoa.UseVisualStyleBackColor = true;
@@ -152,9 +156,9 @@
             // 
             // QuanLyMonHoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1158, 922);
+            this.ClientSize = new System.Drawing.Size(878, 538);
             this.Controls.Add(this.buttonXoa);
             this.Controls.Add(this.buttonSua);
             this.Controls.Add(this.buttonThem);
